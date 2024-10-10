@@ -10,5 +10,9 @@ class Solution4Test4 {
         solution4.solution("15");
         solution4.solution("push 1");
         solution4.solution("push 2");
+        solution4.solution("push 3");
+        solution4.solution("push 4");
+        solution4.solution("front");
+        solution4.solution("back");
     }
 }

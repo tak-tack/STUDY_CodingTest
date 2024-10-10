@@ -9,11 +9,20 @@ public class Solution4 {
         }else if (str.contains("push")){
             push(str);
         }else if (str.contains("front")){
+            System.out.println( front());
+        }else if (str.contains("back")){
+            System.out.println(back());
+        }else if (str.contains("size")){
 
         }else if (str.contains("size")){
             System.out.println(size());
-        }
+        }else if (str.contains("empty")){
 
+        }else if (str.contains("pop")){
+
+        }else {
+
+        }
 
     }
     int makeQueueArray(int queueSize){
@@ -26,13 +35,29 @@ public class Solution4 {
             return 1;
         }
     }
-
+    // push X: 정수 X를 큐에 넣는 연산이다.
     void push(String beforeVal){
         String afterVal = beforeVal.replace("push ","");
-      queueArray[0] = Integer.parseInt(afterVal);
+      queueArray[queueArray.length-(queueArray.length-1)] = Integer.parseInt(afterVal);
     }
 
-    int pop(String val){
+    // 큐의 가장 앞에 있는 정수를 출력한다. 만약 큐에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+    int front(){
+        System.out.print("front: ");
+        return queueArray[0];
+    }
+
+    // 큐의 가장 뒤에 있는 정수를 출력한다. 만약 큐에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+    int back()
+    {
+        System.out.print("back : ");
+        return queueArray[queueArray.length-1];
+
+    }
+
+    int pop(String beforeVal){
+
+
         return 0;
     }
     int size(){
@@ -41,11 +66,7 @@ public class Solution4 {
     int empty(String val){
         return 0;
     }
-    int front(String val){
-        return 0;
-    }
-    int back(String val){
-        return 0;
-    }
+
+
 
 }
