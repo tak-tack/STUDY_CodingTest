@@ -10,6 +10,8 @@ public class Solution4 {
             push(str);
         }else if (str.contains("front")){
 
+        }else if (str.contains("size")){
+            System.out.println(size());
         }
 
 
@@ -33,8 +35,8 @@ public class Solution4 {
     int pop(String val){
         return 0;
     }
-    int size(String val){
-        return 0;
+    int size(){
+        return queueArray.length;
     }
     int empty(String val){
         return 0;
