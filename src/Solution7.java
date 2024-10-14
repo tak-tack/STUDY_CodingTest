@@ -4,20 +4,18 @@ import java.util.Queue;
 public class Solution7 {
     Queue<Integer> solution(int N, int K)
     {
-        Queue<Integer> queue = new ArrayDeque<>();
+        Queue<Integer> requestQueue = new ArrayDeque<>();
         Queue<Integer> responseQueue = new ArrayDeque<>();
         for(int i=1; i<=N; i++){
-            queue.add(i);
+            requestQueue.add(i);
         }
-        while(!queue.isEmpty())
+        while(!requestQueue.isEmpty())
         {
         for(int i = 1; i < K; i++){
-                queue.add(queue.poll());
+            requestQueue.add(requestQueue.poll());
         }
-            responseQueue.add(queue.poll());
+            responseQueue.add(requestQueue.poll());
         }
         return responseQueue;
     }
 }
-
-

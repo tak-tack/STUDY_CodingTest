@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class Solution6 {
+public class Solution6 { // 카드 뭉치
     Queue<Integer> solution(int N){
         Queue<Integer> queue = new ArrayDeque<>();
         Queue<Integer> tempQueue = new ArrayDeque<>();
@@ -10,13 +10,11 @@ public class Solution6 {
         }
         while(!queue.isEmpty())
         {
-            tempQueue.add(queue.poll()); // 버린 카드
+            tempQueue.add(queue.poll());
             if(!queue.isEmpty()) {
-                queue.add(queue.poll()); // 제일 아래로 옮김
+                queue.add(queue.poll());
             }
         }
-
-
         return tempQueue;
     }
 }
