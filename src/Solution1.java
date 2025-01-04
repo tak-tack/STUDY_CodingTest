@@ -22,7 +22,6 @@ public class Solution1 {
         {
             answer = false;
         }
-
         return answer;
     }
 
