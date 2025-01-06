@@ -1,6 +1,6 @@
 import java.util.Stack;
 // StackQueue
-// 올바른 괄호 찾기
+// 올바른 괄호 찾기 test
 public class Solution1 {
     boolean solution(String s) { // 올바른 괄호 찾기
         boolean answer = true;
