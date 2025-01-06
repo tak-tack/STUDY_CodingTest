@@ -1,4 +1,4 @@
-/*
+package CodingTest;/*
 게임 화면은 "1 x 1" 크기의 칸들로 이루어진 "N x N" 크기의 정사각 격자이며 위쪽에는 크레인이 있고 오른쪽에는 바구니가 있습니다.
  (위 그림은 "5 x 5" 크기의 예시입니다). 각 격자 칸에는 다양한 인형이 들어 있으며 인형이 없는 칸은 빈칸입니다.
  모든 인형은 "1 x 1" 크기의 격자 한 칸을 차지하며 격자의 가장 아래 칸부터 차곡차곡 쌓여 있습니다.
@@ -16,7 +16,6 @@
 
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 public class Solution3 {

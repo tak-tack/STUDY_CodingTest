@@ -1,18 +1,25 @@
+import CodingTest.Solution1;
+import CodingTest.Solution2;
+import CodingTest.*;
+import HashMap.HashMap1;
 
 public class Main {
     public static void main(String[] args) {
-        Solution1 solution1 = new Solution1();
-        Solution2 solution2 = new Solution2();
+        HashMap1 hm1 = new HashMap1();
+//        Solution1 solution1 = new Solution1();
+//        Solution2 solution2 = new Solution2();
 
-        if(solution1.solution("(()()())"))
-        {
-            System.out.println("올바른 괄호");
-        }else{
-            System.out.println("올바르지 않은 괄호");
-
-        }
-            System.out.println("괄호 회전하기 : " + solution2.solution("[]"));
-
+        hm1.hashMapInputTest();
+        hm1.hashMapOutputTest();
+//        if(solution1.solution("(()()())"))
+//        {
+//            System.out.println("올바른 괄호");
+//        }else{
+//            System.out.println("올바르지 않은 괄호");
+//
+//        }
+//            System.out.println("괄호 회전하기 : " + solution2.solution("[]"));
+//
 
     }
 }

@@ -1,3 +1,5 @@
+package CodingTest;
+
 import java.util.HashMap;
 
 public class Solution11 {

@@ -1,6 +1,6 @@
-import org.junit.jupiter.api.Test;
+package CodingTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class Solution5Test {
     Solution5 solution5 = new Solution5();

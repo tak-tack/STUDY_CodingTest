@@ -1,4 +1,4 @@
-// StackQueue
+package CodingTest;// StackQueue
 // 괄호 회전하기
 // 문제 설명
 // 다음 규칙을 지키는 문자열을 올바른 괄호 문자열이라고 정의합니다.

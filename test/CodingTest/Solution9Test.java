@@ -1,3 +1,5 @@
+package CodingTest;
+
 import org.junit.jupiter.api.Test;
 
 class Solution9Test {

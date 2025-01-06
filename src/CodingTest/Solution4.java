@@ -1,3 +1,5 @@
+package CodingTest;
+
 public class Solution4 {
 
     int[] queueArray;

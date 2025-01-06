@@ -1,7 +1,7 @@
+package CodingTest;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Solution2Test {
     Solution2 solution2 = new Solution2();
