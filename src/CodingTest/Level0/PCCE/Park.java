@@ -19,7 +19,8 @@ import java.util.Objects;
 - park[i][j]의 원소는 문자열입니다.
 - park[i][j]에 돗자리를 깐 사람이 없다면 "-1", 사람이 있다면 알파벳 한 글자로 된 값을 갖습니다.
 
-포기 개어렵
+포기 개어렵  지원님 풀이 구경하기 dp로 푸심
+
  */
 public class Park {
     public static void main(String[] args) {

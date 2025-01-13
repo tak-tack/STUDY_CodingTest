@@ -12,11 +12,12 @@ package CodingTest.Level0.PCCE;
 - 2번 정거장 : ["Off", "On", "-"] (1명 승차, 1명 하차)
 - 3번 정거장 : ["Off", "-", "-"]  (0명 승차, 1명 하차)
 
-위와 같은 경우, 1번 정거장에서 3명이 승차하고, 2번 정거장에서 1명 승차 1명 하차, 3번 정거장에서 1명이 하차했으므로 4번 정거장에 도착한 버스에는 2명이 타고 있습니다.
+위와 같은 경우, 1번 정거장에서 3명이 승차하고, 2번 정거장에서 1명 승차 1명 하차, 3번 정거장에서 1명이 하차했으므로 4번 정거장에 916787867도착한 버스에는 2명이 타고 있습니다.
 4번 정거장에서는 영진이가 가장 먼저 탑승하므로, 남아있는 좌석 수는 3개입니다.
 
 주어진 solution함수는 버스의 좌석 개수 seat, 기점에서 출발한 버스가 순서대로 방문한 정거장에서 승객이 승/하차한 정보를 담은 2차원 문자열 리스트 passengers가 주어질 때,
  버스에 남아있는 좌석의 개수를 return 하는 함수입니다. solution 함수가 올바르게 작동하도록 빈칸을 채워 solution함수를 완성해 주세요.
+
  */
 public class Bus {
     public static void main(String[] args) {
@@ -32,7 +33,7 @@ public class Bus {
             num_passenger -= func3(passengers[i]) // 못 앉는 자리?
             ;
         }
-        int answer = func1(1-num_passenger); // 남은 좌석 수는 총 좌석 수 - 현재 승차 인원 으로 계산할 수 있겠다.
+        int answer = func1(seat-num_passenger); // 남은 좌석 수는 총 좌석 수 - 현재 승차 인원 으로 계산할 수 있겠다.
         return answer;
     }
 
