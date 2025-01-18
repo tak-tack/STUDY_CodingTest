@@ -52,8 +52,6 @@ public class NeverEndingHomework {
                 score += st.pop(); // A 빼서 점수 더하기
                 st.pop();
             }
-
-
         }
         System.out.println(score);
 
