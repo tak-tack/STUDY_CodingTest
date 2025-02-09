@@ -20,7 +20,7 @@ report : 각 이용자가 신고한 이용자의 ID 정보가 담긴 문자열 �
 k : 정지 기준이 되는 신고 횟수
 반환 값 :
  */
-public class Solution13 {
+public class 신고결과받기 {
     int[] solution(String[] id_list, String[] report, int k){
         // 각 유저를 인덱스로 변환하는 Map 생성
         Map<String, Integer> userIndex = new HashMap<>();

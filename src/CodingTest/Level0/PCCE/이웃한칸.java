@@ -1,8 +1,5 @@
 package CodingTest.Level0.PCCE;
 
-import java.util.Arrays;
-import java.util.Objects;
-
 /*
 각 칸마다 색이 칠해진 2차원 격자 보드판이 있습니다. 그중 한 칸을 골랐을 때,
 위, 아래, 왼쪽, 오른쪽 칸 중 같은 색깔로 칠해진 칸의 개수를 구하려고 합니다.
@@ -23,9 +20,9 @@ board : 보드의 각 칸에 칠해진 색깔 이름이 담긴 이차원 문자�
 h,w : 고른 칸의 위치를 나타내는 두 정수
 answer : 같은색 색깔(count)
  */
-public class neighborKhan {
+public class 이웃한칸 {
     public static void main(String[] args) {
-        neighborKhan n = new neighborKhan();
+        이웃한칸 n = new 이웃한칸();
         String[][] param = {{"blue", "red", "orange", "red"}, {"red", "red", "blue", "orange"}, {"blue", "orange", "red", "red"}, {"orange", "orange", "red", "blue"}};
         System.out.println(
         n.solution(param,1,1)

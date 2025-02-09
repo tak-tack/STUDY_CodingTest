@@ -1,5 +1,5 @@
-import CodingTest.Solution1;
-import CodingTest.Solution2;
+//import CodingTest.Solution1;
+//import CodingTest.Solution2;
 import CodingTest.*;
 import HashMap.HashMap1;
 

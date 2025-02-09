@@ -29,7 +29,7 @@ import java.util.Stack;
 * 출력
 성애가 받을 과제 점수를 출력한다.
  */
-public class NeverEndingHomework {
+public class 숫자가끝나지않아 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine()); // 이번 학기가 몇 분인지를 나타내는 정수 N

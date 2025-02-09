@@ -2,9 +2,9 @@ package CodingTest.Stack;
 
 import java.util.Stack;
 
-public class After_ParenthesesRotation {
+public class 올바른괄호 {
     public static void main(String[] args) {
-        After_ParenthesesRotation bp = new After_ParenthesesRotation();
+        올바른괄호 bp = new 올바른괄호();
         System.out.println(bp.solution("}]()[{"));
     }
     public int solution(String s){

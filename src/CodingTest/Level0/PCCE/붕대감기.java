@@ -11,10 +11,10 @@ package CodingTest.Level0.PCCE;
 몬스터의 공격 시간과 피해량을 담은 2차원 정수 배열 attacks가 매개변수로 주어집니다. 모든 공격이 끝난 직후 남은 체력을 return 하도록 solution 함수를 완성해 주세요.
 만약 몬스터의 공격을 받고 캐릭터의 체력이 0 이하가 되어 죽는다면 -1을 return 해주세요.
  */
-public class Badage {
+public class 붕대감기 {
     // bandage : {붕대감기기술의 시전시간, 1초당 회복량, 추가 회복량}, health : 최대 체력, attacks : 몬스터의 공격 시간과 피해량 2차원 배열
     public static void main(String[] args) {
-        Badage badage = new Badage();
+        붕대감기 badage = new 붕대감기();
         int[] bandage = {3,3,3};
         int health = 100;
         int[][] attacks = {{1,3},{5,5},{10,20},{3,11}};

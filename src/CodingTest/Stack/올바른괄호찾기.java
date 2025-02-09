@@ -1,9 +1,9 @@
-package CodingTest;
+package CodingTest.Stack;
 
 import java.util.Stack;
 // StackQueue
 // 올바른 괄호 찾기 test
-public class Solution1 {
+public class 올바른괄호찾기 {
     boolean solution(String s) { // 올바른 괄호 찾기
         boolean answer = true;
         Stack<Character> st = new Stack<>();

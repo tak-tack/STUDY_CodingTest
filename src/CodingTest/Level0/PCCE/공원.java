@@ -1,7 +1,6 @@
 package CodingTest.Level0.PCCE;
 
 import java.util.Arrays;
-import java.util.Objects;
 
 /*
 지민이는 다양한 크기의 정사각형 모양 돗자리를 가지고 공원에 소풍을 나왔습니다. 공원에는 이미 돗자리를 깔고 여가를 즐기는 사람들이 많아
@@ -22,9 +21,9 @@ import java.util.Objects;
 포기 개어렵  지원님 풀이 구경하기 dp로 푸심
 
  */
-public class Park {
+public class 공원 {
     public static void main(String[] args) {
-        Park pa = new Park();
+        공원 pa = new 공원();
         int[] mats = {5,3,2};
         String[][] park = {
                            {"A", "A", "-1", "B", "B", "B", "B", "-1"}

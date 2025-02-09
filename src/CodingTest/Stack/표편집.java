@@ -23,9 +23,9 @@ n	k	cmd	result
 
 노드로 관리
  */
-public class EditGraph {
+public class 표편집 {
     public static void main(String[] args) {
-        EditGraph eg = new EditGraph();
+        표편집 eg = new 표편집();
         String[] str  = {"D 2","C","U 3","C","D 4","C","U 2","Z","Z"};
         eg.solution(8,2,str);
     }

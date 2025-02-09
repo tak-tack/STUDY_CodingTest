@@ -16,9 +16,9 @@ package CodingTest.Level0.PCCE;
 7. 주어진 solution 함수에는 위의 규칙 중 올바르게 적용되지 않는 것이 있습니다. solution 함수가 올바르게 작동하도록 한 줄을 수정해주세요.
 
  */
-public class NicknameRule {
+public class 닉네임룰 {
     public static void main(String[] args) {
-        NicknameRule rule = new NicknameRule();
+        닉네임룰 rule = new 닉네임룰();
         rule.solution("GO");
 
     }

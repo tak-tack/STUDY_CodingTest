@@ -33,9 +33,9 @@ return하도록 solution함수를 완성해 주세요.
 그렇게 되면 90도 안해도됨
 
  */
-public class MoneyFolding {
+public class 지폐접기 {
     public static void main(String[] args) {
-        MoneyFolding mf = new MoneyFolding();
+        지폐접기 mf = new 지폐접기();
         int[] wallet = {50, 50};
         int[] bill = {100, 241};
         mf.solution(wallet,bill);

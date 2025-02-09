@@ -1,7 +1,5 @@
 package CodingTest.Stack;
 
-import CodingTest.Array.CtrlZ;
-
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Stack;

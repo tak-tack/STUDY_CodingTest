@@ -1,4 +1,4 @@
-package CodingTest;// StackQueue
+package CodingTest.Stack;// StackQueue
 // 괄호 회전하기
 // 문제 설명
 // 다음 규칙을 지키는 문자열을 올바른 괄호 문자열이라고 정의합니다.
@@ -13,7 +13,7 @@ package CodingTest;// StackQueue
 //s의 길이는 1 이상 1,000 이하입니다.
 import java.util.Stack;
 
-public class Solution2 {
+public class 괄호회전하기 {
 
     int solution(String s){
         // 내가 한 것

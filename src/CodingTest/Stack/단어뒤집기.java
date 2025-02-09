@@ -17,7 +17,7 @@ N개의 케이스들이 이어지는데, 각 케이스는 스페이스로 띄어
 N = 5
 1 ≤ L ≤ 25
  */
-public class ReverseWord {
+public class 단어뒤집기 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine()); // 첫 행은 N이며, 전체 케이스의 개수이다. input1
