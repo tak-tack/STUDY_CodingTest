@@ -1,6 +1,5 @@
 package CodingTest.Stack;
 
-import java.awt.*;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -18,73 +17,95 @@ public class 공원산책 {
         공원산책 wp = new 공원산책();
         wp.solution(park,routes);
     }
+    // 이동
+    public int[] solution(String[] park, String[] routes) {
+        int[] answer = {};
+        myPark mp = new myPark();
+        mp.length = park[0].length();
+        mp.height = park.length;
+        mp.setGrid(park); // 공원 정보 입력
+        Queue<String> queue = new LinkedList<>(Arrays.asList(routes));
+        // 명령 대기열
+        while(!queue.isEmpty()){
+            mp.valid(queue.poll());
+        }
+        return answer;
+    }
 
+    // 공원
     public static class myPark{
         int length = 0;
         int height = 0;
-        char[][] grid;
+        static char[][] grid;
+        parkRobot robot = new parkRobot();
 
+        // 공원 상태
         public void setGrid(String[] param) {
-            grid = new char[param.length][param[0].length()];
+            grid = new char[param.length][param[0].length()]; // 배열 크기 초기화
             for(int i =0; i<param.length; i++){
                 for(int j=0; j < param[i].length(); j++){
-                    this.grid[i][j] = param[i].charAt(j);
+                    if(param[i].charAt(j) == 'S'){
+                        robot.setPosition(i,j); // 로봇의 시작 위치
+                    }
+                    grid[i][j] = param[i].charAt(j);
+
                 }
             }
         }
-
-        public boolean valid(String command) {
+        //
+        public void valid(String command) {
             int[] dx = {-1,0,1,0}; // x의 변화량
             int[] dy = {0,1,0,-1}; // y의 변화량
-            int x =0, y=0;
-
+            //-1 0 : 동,  1 0 : 동, 0 -1 : 남, 1 0 : 서`\
             char ch = command.charAt(0);
-            int ch2 = command.charAt(2);
-            System.out.println(ch + " - " + ch2);
+            int ch2 = Integer.parseInt(command.substring(2,3));
             parkRobot robot = new parkRobot();
-            if(robot.canMove()){
-                switch (ch){
-                    case 'W':
-                        x += ch2 + dx[0];
-                        y += dy[0];
-                    case 'S':
-                        x += dx[1];
-                        y +=  ch2 + dy[1];
-                    case 'E':
-                        x +=  ch2 + dy[2];
-                        y += dx[2];
-                    case 'N':
-                        x += dx[3];
-                        y +=  ch2 + dy[3];
-                }
-            }
-            System.out.println( "x : " + x + ", y : " + y);
+//                switch (ch){
+//                    case 'W':
+//                        robot.setPosition( 0, ch2 * dx[0]);
+//                        break;
+//                    case 'S':
+//                        robot.setPosition(ch2 * dy[1] , 0);
+//                        break;
+//                    case 'E':
+//                        robot.setPosition(0, ch2 * dx[2]);
+//                        break;
+//                    case 'N':
+//                        robot.setPosition( ch2 * dy[3], 0);
+//                        break;
+//                    default:
+//                        System.out.println("존재하지 않은 커멘더 입니다.");
+//                        break;
+//
+//            for(int i = 0; i<grid.length; i++){
+//                for(int j = 0; j<grid[i].length; j++){
+//                    System.out.print(grid[i][j] + " ");
+//                }
+//            }
+            System.out.println( "x : " + parkRobot.positionX + ", y : " + parkRobot.positionY);
 
 
-        return true;
         }
     }
-    public static class parkRobot{
-        int positionX = 0;
-        int positionY = 0;
 
+    // 공원 로봇
+    public static class parkRobot{
+        static int positionX = 0;
+        static int positionY = 0;
+
+        // 로봇 위치 초기화
+        public void setPosition(int x, int y) {
+            positionX += x;
+            positionY += y;
+        }
+
+        // 로봇 이동 가능 여부
         boolean canMove(){
 
             return true;
         }
 
     }
-    public int[] solution(String[] park, String[] routes) {
-        int[] answer = {};
 
-        myPark mp = new myPark();
-        mp.length = park[0].length();
-        mp.height = park.length;
-        mp.setGrid(park);
-        Queue<String> queue = new LinkedList<>(Arrays.asList(routes));
-        while(!queue.isEmpty()){
-            mp.valid(queue.poll());
-        }
-        return answer;
-    }
+
 }
