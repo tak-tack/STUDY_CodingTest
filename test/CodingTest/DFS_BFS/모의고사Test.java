@@ -2,10 +2,6 @@ package CodingTest.DFS_BFS;
 
 import org.junit.jupiter.api.Test;
 
-import javax.swing.plaf.synth.SynthUI;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 class 모의고사Test {
 
     @Test

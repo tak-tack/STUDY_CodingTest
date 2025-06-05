@@ -16,7 +16,7 @@ public class 모의고사 {
         int[] scores = new int[3];
 
         // 정답과 비교하면서 맞은 개수 카운트
-        // i % p1.length : 수포자의 찍기 패턴을 무한히 반복하는 효과를 준다.
+        // i % p1.length : 수포자의 찍기 패턴을 무한히 반복하는 효과
         // i : 전체 문제 번호, % p1.length : 수포자 패턴을 벗어나지 않게 제한
         // 결과 : p1 의 5개 패턴을 무한 반복하는 것과 같은 효과
         for (int i = 0; i < answers.length; i++) {
