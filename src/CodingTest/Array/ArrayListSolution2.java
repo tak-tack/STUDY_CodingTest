@@ -1,4 +1,4 @@
-package CodingTest.Level0.ArrayList;
+package CodingTest.Array;
 
 import java.util.Arrays;
 public class ArrayListSolution2 {

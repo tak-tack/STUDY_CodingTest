@@ -1,4 +1,5 @@
 package CodingTest.Level0.ArrayList;
+import CodingTest.Array.ArrayListSolution;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

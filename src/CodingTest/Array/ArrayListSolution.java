@@ -1,4 +1,4 @@
-package CodingTest.Level0.ArrayList;
+package CodingTest.Array;
 // 리스트 (배열)
 public class ArrayListSolution {
     /*
