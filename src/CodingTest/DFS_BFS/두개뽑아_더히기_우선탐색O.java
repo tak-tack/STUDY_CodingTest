@@ -12,16 +12,13 @@ public class 두개뽑아_더히기_우선탐색O {
         System.out.println(Arrays.toString(solution(arr)));
     }
 
-
-    // 방법 1. 자료구조_iterator 사용
         public static int[] solution(int[] numbers) {
             dfs(numbers, 0, 0, 0);
             // 정렬해서 int[] 배열로 반환
             return resultSet.stream().sorted().mapToInt(Integer::intValue).toArray();
         }
 
-
-        // numbers : 배열
+    // numbers : 배열
     // depth : 현재까지 선택한 숫자의 개수
     // sum : 선택한 숫자들의 합
     // start : 조합을 위해 다음 탐색을 시작할 인덱스
