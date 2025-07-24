@@ -11,7 +11,7 @@ package CodingTest.Sort;
 - 데이터가 거의 정렬되어 있을 경우 매우 효율적
 - 최선의 경우에는 O(n)의 시간복잡도를 가진다. 이는 각 원소가
 한한번의 비교만으로 자기 위치를 찾기 때문
-- 인플레이스 정렬 이다.
+- 인플레이스(제자리) 정렬 이다.
 - 데이터의 크기가 작을 때 다른 복잡한 정렬 알고리즘보다 빠르다.
 
 3. 단점
@@ -29,8 +29,8 @@ package CodingTest.Sort;
 */
 public class InsertionSort {
     public static void main(String[] args){
-        int[] data = new int[500000]; //{5,1,4,2,8};
-        for(int j = 0; j < 500000; j++){
+        int[] data = new int[5000]; //{5,1,4,2,8};
+        for(int j = 0; j < 5000; j++){
             data[j] = (int)(Math.random() * 100) + 1;
         }
         System.out.println("정렬 전:");
